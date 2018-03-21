@@ -1,0 +1,137 @@
+body{
+	background-image: url(media/wallpaper2.jpg);
+	/*background:rgb(240,240,240);*/
+	color:#222;
+	font-family: Helvetica, Arial, sans-serif; 
+}
+
+/* un comentario en CSS se escribe de esta manera */
+
+a{color:hsl(0, 60%, 40%);}
+
+:hover{transition:  ease all 1s;}
+
+a:hover{color:hsl(0, 100%, 50%);}
+
+div.container{
+	margin:2rem 20rem 2rem 20rem;
+	padding: 5px 50px 50px 50px;
+	position: absolute;
+	background-color: white;
+}
+
+h2{
+	/*transform: translate(0, -10px) rotate(180deg);
+	position:absolute;
+	right:0;
+	top:0;*/
+}
+
+@media screen and (max-width: 1024px){
+	h2{display:none;}
+}
+
+@keyframes espaciado {
+	from {letter-spacing: 0.01rem;}
+	to {letter-spacing: 0.1rem;}
+}
+
+h4:hover {
+	animation-name: espaciado;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+figure{
+	background:rgba(255,255,255,.9);
+	padding:0.5rem;
+	margin:1rem 0 2rem 0;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+figure img{
+	width: 100%;
+	height:auto;
+	filter: grayscale(100%);
+}
+
+figure img:hover{
+	width: 100%;
+	height:auto;
+	filter: grayscale(0);
+}
+
+figcaption{
+	padding:0.5rem;
+	font-size: 90%;
+	letter-spacing: 0.01rem;
+}
+
+hr{
+	border:1px solid ;
+	background: black;
+}
+
+svg{
+	border:5px solid #fff;
+}
+
+s, del{
+	background:rgba(0,0,0,.8); 
+	color:rgba(0,0,0,1);
+	text-decoration: none;
+}
+
+ins{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+blockquote{
+	font-family: 'Pinyon Script', cursive;
+	font-size: 2.3em;
+	width: 70%;
+	background-color: rgb(245,245,245);
+	padding: 30px;
+	margin: 0px;
+	text-align: center;
+	background-image: url(media/marco.jpg);
+	background-size: 70%;
+	background-position: center; 
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Shrikhand', cursive;
+
+}
+
+audio{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+video{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+nav ol li {
+	font-size: 130%;
+}
+
+h1{
+	line-height: 90%;
+	text-shadow: 3px 3px rgb(255,100,100);
+}
+
+table{
+	margin-bottom: 20px;
+	background-color: rgb(245,245,245);
+	padding: 15px;
+
+}

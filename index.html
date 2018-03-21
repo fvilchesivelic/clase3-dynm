@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Lo primero es indicar la codificación de caracteres utilizada-->
+	<meta charset="utf-8">
+	<!-- Luego los demás elementos meta, con sus atributos name y content -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Nunca olvidar el título que se desplegará en la peseña del navegador--> 
+	<title>Asignatura Pendiente</title>
+	<!-- Podemos vincular un favicon -->
+	<link rel="icon" type="image/png" href="favicon.png">
+	<!-- Podemos vincular una o varias hojas de estilo CSS -->
+	<link rel="stylesheet" href="estilo.css">
+	<!-- Podemos incluir, directamente, algunas reglas de estilo CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Shrikhand" rel="stylesheet">
+	<style>…</style>
+	<!-- Podemos vincular, aquí o en otra parte, uno o varios scripts de JS--> 
+	<script src="javascript.js"></script>
+	<!-- Podemos incluir, aquí o en otra parte, y directamente, algún script de JS--> 
+	<script>…</script>
+</head>
+<body>
+	<!--primero una DIVisión. Noten que se cierra en la antepenúltima línea-->
+	<div class="container">
+		<!--ahora un headER, con ER al final, y su lugar es el body-->
+		<header>
+		<!--aquí pondremos un par de encabezados, uno de primero nivel y otro de segundo-->
+			<h1 style="font-size: 4em;">Asignaturas Pendientes</h1>
+			<hr>
+		</header>
+		<!--este es un espacio para la NAVegación-->
+		<nav>
+			<ol>
+				<li><a href="#primero">Click para ir hacia Miguel</a></li>
+				<li><a href="#segundo">Click para ir hacia Felipe</a></li>
+				<li><a href="#tercero">Click para Poster Doble</a></li>
+			</ol>
+		</nav>
+		<!--ahora vamos por lo principal-->		
+		<main>
+			<!-- vamos a abrir una sección, que contendrá 3 artículos-->
+			<section>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article id="primero">
+					<section>
+						<p><i>This is a very sensitive subject.</i></p>
+						<h2>Miguel Bosé: El Artista Ícono</h2>
+						<p>Muchas imágenes dicen más que mil palabras.</p>
+						<figure>
+							<img src="media/bose.jpg" alt="Alternativa para cuando no se vea la imagen">
+							<figcaption>Miguel Bosé, el #artistaicono del @festivaldevina  <a href="http://www.chilevision.cl/festival-de-vina/artistas-2018/el-premio-que-recibio-miguel-bose-en-homenaje-a-artista-icono/2018-02-21/005723.html" target="_blank" title="Noticia Bose">Revisa la noticia del máximo premio del certamen.</a>.</figcaption>
+						</figure>						
+					</section>
+					<footer>
+						<p>Guau.</p>
+						<hr />
+					</footer>
+				</article>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article>
+					<header>
+						<h3 id="segundo">El Último Buenos Días a Todos del Halcón de Chicureo</h3>
+					</header>
+					<section>
+						<p>Y hubo tal silencio el día... que nos tocaba olvidar</p>
+						<video poster="media/thumbnail.jpg" controls>
+							<source src="media/videohalcon.webm" type="video/webm">
+							<source src="media/videohalcon.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+
+						<h4>Banda Sonora Para el Video de Felipe</h4>
+						<p>Dale play para acompanar los últimos momentos de este Ángel.</p>
+						<audio controls>
+							<source src="media/angelfinal.mp3" type="audio/mpeg">
+							Un aviso, por si las moscas: Tu navegador es muy viejo, no entiende lo que es un elemento audio.
+						</audio>
+						<h2>Los temas más escuchados</h4>
+						<table>
+							<tr>
+								<th>Canción</th>
+								<th>Artista</th>
+							</tr>
+							<tr>
+								<td>Noa Noa</td>
+								<td>Juan Gabriel</td>
+							</tr>
+							<tr>
+								<td>Rosa Rosa</td>
+								<td>Sandro</td>
+							</tr>
+							<tr>
+								<td>Piel de Ángel</td>
+								<td>Camilo Sesto</td>
+							</tr>
+						</table>
+						<hr>
+						<h3>Un poco de sabiduría.</h4>
+						<p>Palabras de un sabio de los que ya no hay. Nacido en México viva México mi ciudad.</p>
+						
+						<blockquote cite="https://elpais.com/cultura/2018/03/06/babelia/1520352987_936609.html">Te extraño más que nunca y no sé qué hacer despierto y te recuerdo al amanecer me espera otro día por vivir sin ti el espejo no miente me veo tan diferente me haces falta tú.</blockquote>
+						<p>Mi artista favorito es  <s>Luis Miguel</s> <del>Sandro</del> <ins>Marco Antonio</ins>".</p>
+					</section>
+					<footer>
+						<hr />
+					</footer>
+				</article>
+				<!--noten como cada artículo repite la estructura header, section, footer-->
+				<article id="tercero">
+					<header>
+						<h2>Poster Doble de Regalo</h3>
+					</header>
+					<section>
+						<p>De Regalo! Una papita! Un stencil del Halcón en SVG. Así podrás transformarlo en posters dobles, postales, o cualquier recuerdo. #vuelaaltohalcon</p>
+						<img src="media/halcon.svg" alt="Alternativa para cuando no se vea la imagen">					
+					</section>
+					<footer>
+						<p>Puedes hacer tanto zoom como quieras. Jamás se pixelará!</p>
+						<hr />
+					</footer>
+				</article>
+			</section>
+		</main>
+		<!--aunque la etiqueta diga lateral, no se pondrá automáticamente al lado… eso es trabajo de CSS-->
+		<!--y con esto terminamos-->
+		<footer>
+			<p>Tratar de no llorar es signo de debilidad.</p>
+			<address>Puede enviar cartas de amor o encomendarse a <a href="mailto:fivilches@uc.cl">felipecamiroaga@uc.cl</a></address>
+		</footer>
+		<!--no olviden dejar cerrados div, body y html-->
+	</div>
+</body>
+</html>
